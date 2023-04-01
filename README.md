@@ -17,5 +17,3 @@ To run the project locally, follow these steps:
 * Push the Prisma schema to the database `npx prisma db push`
 * Build the project `npm run build`
 * Start the project `npm start`
-
-If you want to use Express.js for the backend instead of Next.js, Check the other branch `with-express`
