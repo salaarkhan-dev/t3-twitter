@@ -132,16 +132,16 @@ let providers = [
         providerText: "Github",
         icon: <GithubIcon className="w-7" />,
     },
-    {
-        provider: "google",
-        providerText: "Google",
-        icon: <GoogleIcon className="w-7" />,
-    },
-    {
-        provider: "discord",
-        providerText: "Discord",
-        icon: <DiscordIcon className="w-7" />,
-    },
+    // {
+    //     provider: "google",
+    //     providerText: "Google",
+    //     icon: <GoogleIcon className="w-7" />,
+    // },
+    // {
+    //     provider: "discord",
+    //     providerText: "Discord",
+    //     icon: <DiscordIcon className="w-7" />,
+    // },
 ];
 
 function SigninBtn({

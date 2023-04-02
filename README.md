@@ -1,4 +1,4 @@
-# This is a Twitter clone, Built with T3 Stack + NextAuth + Postgres(Supabase) + Prisma.
+# This is a Twitter clone, Built with T3 Stack + NextAuth + Postgres(Supabase) + Prisma
 
 ## **Requirements**
 

@@ -46,7 +46,7 @@ export const Counter: React.FC<PropsType> = ({ num }) => {
       {...{
         className: "input",
         style: inputStyle,
-        maxlength: 2,
+        maxLength: 2,
         onChange: (e) => {
           e.preventDefault();
           // handleValueChange(parseInt(e.target.value, 10), true);

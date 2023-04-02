@@ -5,9 +5,9 @@ import React from "react";
 export function Body(props: TweetProps) {
   return (
     <>
-      <p className="text-tweet whitespace-pre-line mb-2 break-words">
+      <div className="text-tweet whitespace-pre-line mb-2 ml-3 break-words">
         <TweetBody body={props.body} />
-      </p>
+      </div>
       {props.images[0] && (
         <div className="my-3 mr-2 flex rounded-2xl ">
           <img

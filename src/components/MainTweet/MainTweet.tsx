@@ -23,25 +23,27 @@ export function MainTweet({
   tweet: TweetProps;
 }) {
   return (
-    <NextLink disabled={reply} href={`/tweet/${tweet.id}`}>
-      <div className="tweet-hover main-border border-b p-4 ">
-        <div className="fade-in flex   cursor-pointer space-x-2  transition-all  ease-in-out">
-          <div className=" flex min-h-full flex-col items-center ">
-            <Avatar avatarImage={tweet.user.profileImage!} />
-            {reply && (
-              <div className="hover-animation  bg-line-reply dark:bg-dark-line-reply  h-[80%] w-0.5"></div>
-            )}
-          </div>
-          <div className="flex w-full grow flex-col">
-            <NextLink href={`/${tweet.user.username}`}>
-              <TweetMetadata color={tweet.user.badge} {...tweet} />
-            </NextLink>
-            <Body {...tweet} />
-            <TweetActions {...tweet} />
-          </div>
-          <TweetOptions id={tweet.id} />
-        </div>
+<NextLink disabled={reply} href={`/tweet/${tweet.id}`}>
+  <div className="tweet-hover main-border border-b p-4 ">
+    <div className="fade-in flex transition-all ease-in-out">
+      <div className="flex min-h-full flex-col items-center ">
+        <Avatar avatarImage={tweet.user.profileImage!} />
+        {reply && (
+          <div className="hover-animation bg-line-reply dark:bg-dark-line-reply h-[80%] w-0.5"></div>
+        )}
       </div>
-    </NextLink>
+      <div className="flex w-full grow flex-col">
+        <div className="cursor-pointer hover:text-blue-500 ml-3">
+          <NextLink href={`/${tweet.user.username}`}>
+            <TweetMetadata color={tweet.user.badge} {...tweet} />
+          </NextLink>
+        </div>
+        <Body {...tweet} />
+        <TweetActions {...tweet} />
+      </div>
+      <TweetOptions id={tweet.id} />
+    </div>
+  </div>
+</NextLink>
   );
 }
